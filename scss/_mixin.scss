@@ -1,0 +1,78 @@
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin section_ttl {
+  font-weight: 900;
+  margin-bottom: 30px;
+  @include pc {
+    font-size: 32px;
+  }
+  @include tab {
+    font-size: 32px;
+  }
+  @include sp {
+    font-size: 28px;
+  }
+}
+
+@mixin common_btn {
+  .common_btn {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 136px;
+    height: 36px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #fff;
+  }
+  .common_btn::before,
+  .common_btn::after {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+    display: block;
+    content: '';
+  }
+  .common_btn::before {
+    right: 0;
+  }
+  .common_btn::after {
+    left: 0;
+  }
+
+  .common_btn:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  .common_btn:hover::before,
+  .common_btn:hover::after {
+    width: 0;
+    background-color: #000;
+  }
+  .common_btn,
+  .common_btn::before,
+  .common_btn::after {
+    transition: all .3s;
+  }
+}

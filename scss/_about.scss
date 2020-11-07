@@ -1,0 +1,301 @@
+.about_kv {
+  position: relative;
+  height: 51.5vh;
+  .about_kv_image {
+    background-image: url(../img/heading_about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 76vw;
+    height: 83.4%;
+  }
+  .about_ttl_wrapper {
+    position: absolute;
+    top: 33.6%;
+    right: 12%;
+    .about_ttl {
+      color: #fff;
+      font-weight: 900;
+      padding-bottom: 5px;
+      @include pc {
+        font-size: 72px;
+      }
+      @include tab {
+        font-size: 56px;
+      }
+      @include sp {
+        font-size: 56px;
+      }
+    }
+    .about_text {
+      color: #fff;
+      @include pc {
+        font-size: 20px;
+      }
+      @include tab {
+        font-size: 16px;
+      }
+      @include sp {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.about_kv::after {
+  content: "";
+  background-color: #222;
+  width: 54.1666vw;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -5;
+}
+
+.vision {
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  padding: 0 30px;
+  @include pc {
+    margin: 120px auto;
+  }
+  @include tab {
+    margin: 80px auto;
+  }
+  @include sp {
+    padding: 0 15px;
+    margin: 80px auto;
+  }
+  .vision_wrapper {
+    @include pc {
+      width: 58%;
+      min-width: auto;
+    }
+    @include tab {
+      width: 60.93%;
+      min-width: 415px;
+    }
+    @include sp {
+      width: 100%;
+      min-width: auto;
+    }
+  }
+  .vison_ttl {
+    @include section_ttl;
+  }
+  .vison_sub_ttl {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .vison_text {
+    @include pc {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    @include tab {
+      font-size: 14px;
+      line-height: 28px;
+    }
+    @include sp {
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+}
+
+.ceo {
+  padding: 0 30px;
+  margin: 0px auto;
+  @include pc {
+    max-width: 1100px;
+    margin-bottom: 120px;
+  }
+  @include tab {
+    margin-bottom: 82px;
+  }
+  @include sp {
+    padding: 0 15px;
+    margin-bottom: 80px;
+  }
+  .ceo_wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .ceo_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/ceo_image.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    @include pc {
+      width: 420px;
+      height: 282.5px;
+    }
+    @include tab {
+      width: 320px;
+      height: 216px;
+    }
+    @include sp {
+      left: -15px;
+      width: 320px;
+      height: 215px;
+    }
+  }
+  .ceo_message_container {
+    z-index: -1;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    @include pc {
+      width: 70%;
+      min-width: auto;
+      padding: 120px 0px 90px;
+      margin-top: 144px;
+    }
+    @include tab {
+      width: 69.7%;
+      min-width: 494px;
+      padding: 109px 0px 78px;
+      margin-top: 131px;
+    }
+    @include sp {
+      width: 100%;
+      min-width: auto;
+      padding: 126px 0px 80px;
+      margin-top: 129px;
+    }
+  }
+  .ceo_message_inner {
+    @include pc {
+      width: 51.94%;
+    }
+    @include tab {
+      width: 84%;
+    }
+    @include sp {
+      width: 83.47%;
+    }
+  }
+  .ceo_ttl {
+    @include section_ttl;
+  }
+  .ceo_text {
+    @include pc {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    @include tab {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    @include sp {
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+}
+
+.company {
+  padding: 0 30px;
+  width: 100%;
+  @include pc {
+    max-width: 1100px;
+    margin: 0px auto 120px;
+  }
+  @include tab {
+    margin: 0px auto 80px;
+  }
+  @include sp {
+    padding: 0 15px;
+    margin: 0px auto 80px;
+  }
+  .company_ttl {
+    @include section_ttl;
+  }
+  .company_wrapper {
+    border-top: 1px solid #dddddd;
+    display: flex;
+    margin-bottom: 30px;
+    @include pc {
+      justify-content: flex-end;
+    }
+    @include tab {
+      justify-content: flex-end;
+    }
+    @include sp {
+      justify-content: center;
+    }
+  }
+  .company_overview {
+    @include pc {
+      width: 72.72%;
+    }
+    @include tab {
+      width: 95.76%;
+    }
+    @include sp {
+      width: 100%;
+    }
+  }
+  .company_overview_list {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  .company_overview_ttl {
+    font-weight: bold;
+    @include pc {
+      width: 144px;
+      font-size: 16px;
+    }
+    @include tab {
+      width: 144px;
+      font-size: 16px;
+    }
+    @include sp {
+      width: 163px;
+      font-size: 14px;
+    }
+  }
+  .company_overview_data {
+    flex: 1;
+    @include pc {
+      font-size: 16px;
+    }
+    @include tab {
+      font-size: 16px;
+    }
+    @include sp {
+      font-size: 14px;
+    }
+  }
+  .company_map {
+    width: 100%;
+    @include pc {
+      height: 360px;
+    }
+    @include tab {
+      height: 230px;
+    }
+    @include sp {
+      height: 470px;
+    }
+  }
+}
+
+footer {
+  background-color: #525252;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .footer_text {
+    font-size: 10px;
+    color: #fff;
+  }
+}
